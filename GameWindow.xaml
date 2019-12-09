@@ -1,0 +1,30 @@
+﻿<Window x:Class="Client.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="GameWindow" Height="700" Width="950">
+    <Canvas Name="GameCanvas">
+        <TextBlock Name="TimerTextBlock" FontSize="30" Canvas.Left="711" Canvas.Top="584" Width="221" Height="55"></TextBlock>
+        <TextBlock FontSize="30" Canvas.Left="30" Canvas.Top="30"><Bold>Room Name: </Bold></TextBlock>
+        <TextBlock Name="questionTextBlock" FontSize="40" Canvas.Left="96" Canvas.Top="100"></TextBlock>
+        <Button Name="firstAnswer" Click="SubmitAnswer" FontSize="35" Canvas.Left="96" Canvas.Top="192" Width="585">
+            <Bold>1st</Bold>
+        </Button>
+        <Button Name="secondAnswer" Click="SubmitAnswer" FontSize="35" Canvas.Left="96" Canvas.Top="308" Width="585">
+            <Bold>2nd</Bold>
+        </Button>
+        <Button Name="thirdAnswer" Click="SubmitAnswer"  FontSize="35" Canvas.Left="96" Canvas.Top="420" Width="585">
+            <Bold>3rd</Bold>
+        </Button>
+        <Button Name="fourthAnswer" Click="SubmitAnswer"  FontSize="35" Canvas.Left="96" Canvas.Top="532" Width="585">
+            <Bold>4th</Bold>
+        </Button>
+        <Button Click="ExitClick" Foreground="Red" FontSize="30" Canvas.Left="774" Canvas.Top="30" Width="126">
+            <Bold>Exit</Bold>
+        </Button>
+
+    </Canvas>
+</Window>

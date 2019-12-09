@@ -1,0 +1,18 @@
+﻿<Window x:Class="Client.BestScoreWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="BestScoreWindow" Height="500" Width="500">
+    <Canvas>
+        <TextBlock FontSize="30" Canvas.Left="132" Canvas.Top="35" Height="52" Width="204"><Bold>BEST SCORES</Bold></TextBlock>
+        <Button Click="BackClick" FontSize="20" Canvas.Left="380" Canvas.Top="25" Height="42" Width="86" RenderTransformOrigin="0.581,0.202">
+            <Bold>
+                Back
+            </Bold>
+        </Button>
+        <Image Source="C:\Users\magshimim\Desktop\Year B\CPP A\Trivia_Project\Trivia\Trivia\Client\Client\picture5.jpg" Width="456" Canvas.Left="26" Canvas.Top="202" Height="228"></Image>
+    </Canvas>
+</Window>

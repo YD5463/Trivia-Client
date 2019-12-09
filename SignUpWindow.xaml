@@ -1,0 +1,20 @@
+﻿<Window x:Class="Client.SignUpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="SignUpWindow" Height="400" Width="400">
+    <Canvas Name="signupCanvas">
+        <TextBlock Canvas.Top="53" Height="22" Width="172" FontSize="14" Canvas.Left="19"><Bold>Please Enter your detailes:</Bold></TextBlock>
+        <TextBox FontSize="15" Name="usernameTextBox" TextWrapping="Wrap" Canvas.Left="154" Canvas.Top="99" Width="185" Height="35"/>
+        <TextBlock TextTrimming="CharacterEllipsis" FontSize="25" Text="Username:" Canvas.Left="10" Canvas.Top="99" Width="119" Height="33"/>
+        <TextBox FontSize="15" Name="passwordTextBox" TextWrapping="Wrap" Canvas.Left="154" Canvas.Top="174" Width="185" Height="35"/>
+        <TextBlock TextTrimming="CharacterEllipsis" FontSize="25" Text="Password:" Canvas.Left="10" Canvas.Top="174" Width="119" Height="33" RenderTransformOrigin="0.488,-0.87"/>
+        <TextBox FontSize="15" Name="emailTextBox" TextWrapping="Wrap" Canvas.Left="154" Canvas.Top="251" Width="185" Height="35"/>
+        <TextBlock TextTrimming="CharacterEllipsis" FontSize="25" Text="Email:" Canvas.Left="19" Canvas.Top="251" Width="76" Height="33"/>
+        <Button FontSize="17" Height="30" Width="119" Canvas.Left="133" Canvas.Top="317" Click="RegisterClick">Register Now</Button>
+        <Button Click="Back_Click" FontSize="15" Height="27" Width="95" Canvas.Left="10" Canvas.Top="10">Back to Login</Button>
+    </Canvas>
+</Window>

@@ -1,0 +1,33 @@
+﻿<Window x:Class="Client.CraeteRoomWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="CraeteRoomWindow" Height="500" Width="500">
+    <Canvas Margin="0,-1,0,1">
+        <TextBlock FontSize="16" Canvas.Left="24" Canvas.Top="40"><Bold>Please fill in the room details here</Bold></TextBlock>
+        <TextBlock FontSize="17" Canvas.Left="24" Canvas.Top="99" Height="25" Width="154"><Bold>Room Name:</Bold></TextBlock>
+        <TextBox Name="room_name_box" FontSize="16" Canvas.Left="249" Canvas.Top="99" Width="163" Height="35" Text="my room"></TextBox>
+
+        <TextBlock FontSize="17" Canvas.Left="24" Canvas.Top="167" Height="25" Width="180"><Bold>Number Of Players:</Bold></TextBlock>
+        <TextBox Name="number_of_players_box" FontSize="16" Canvas.Left="299" Canvas.Top="167" Width="77" Height="35" Text="3"></TextBox>
+
+        <TextBlock FontSize="17" Canvas.Left="24" Canvas.Top="236" Height="25" Width="180"><Bold>Number Of Question:</Bold></TextBlock>
+        <TextBox Name="number_of_question_box" FontSize="16" Canvas.Left="299" Canvas.Top="236" Width="77" Height="34" RenderTransformOrigin="0.516,1.883" Text="3"></TextBox>
+
+        <TextBlock FontSize="16" Canvas.Left="24" Canvas.Top="310" Height="25" Width="239"><Bold>Time For Question(is seconds)</Bold></TextBlock>
+        <TextBox Name="time_for_question" FontSize="16" Canvas.Left="299" Canvas.Top="300" Width="77" Height="35" Text="10" RenderTransformOrigin="0.997,0.43"></TextBox>
+
+        <Button FontSize="16" Width="100" Canvas.Left="382" Canvas.Top="10" Height="34" Click="BackClick">
+            <Bold>Back</Bold>
+        </Button>
+
+        <Button FontSize="19" Canvas.Left="186" Canvas.Top="380" Height="42" Width="140" Click="CreateClick">
+            <Bold>
+                Create
+            </Bold>
+        </Button>
+    </Canvas>
+</Window>

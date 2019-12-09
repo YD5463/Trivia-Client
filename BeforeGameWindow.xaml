@@ -1,0 +1,14 @@
+﻿<Window x:Class="Client.BeforeGameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="BeforeGameWindow" Height="500" Width="800">
+    <Canvas Name="BeforeGameWindowCanvas">
+        <TextBlock  FontSize="26" Canvas.Left="95" Canvas.Top="115"><Bold>Players in room:</Bold></TextBlock>
+        <ListBox SelectionMode="Single" FontSize="25" Name="playersList" Canvas.Left="94" Canvas.Top="175" Height="177" Width="411">
+        </ListBox>
+    </Canvas>
+</Window>

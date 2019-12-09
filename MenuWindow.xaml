@@ -1,0 +1,27 @@
+﻿<Window x:Class="Client.MenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="MenuWindow" Height="620" Width="600">
+    <Canvas Name="MenuCanvas">
+ 
+        <Button Click="MyProfileClick" FontSize="16" Height="39" Width="134" Canvas.Left="27" Canvas.Top="79">
+            <Bold>My Profile</Bold>
+        </Button>
+        <Button FontSize="17" Click="SignOutClick" Canvas.Left="231" Canvas.Top="183" Height="41" Width="177">
+            <Bold>Sign Out</Bold>
+        </Button>
+        <Button FontSize="17" Click="CreateRoomClick" Canvas.Left="231" Canvas.Top="289" Height="41" Width="177">
+            <Bold>Create Room</Bold>
+        </Button>
+        <Button FontSize="17" Click="JoinRoomClick" Canvas.Left="231" Canvas.Top="387" Height="41" Width="177">
+            <Bold>Join Room</Bold>
+        </Button>
+        <Button FontSize="17" Click="BestScoresClick" Canvas.Left="231" Canvas.Top="479" Height="41" Width="177">
+            <Bold>Best Scores</Bold>
+        </Button>
+    </Canvas>
+</Window>

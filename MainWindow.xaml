@@ -1,0 +1,22 @@
+﻿<Window x:Class="Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="Login" Height="350" Width="525">
+    <Canvas>
+        <TextBlock  FontSize="25" Canvas.Left="139" Canvas.Top="24"><Underline>Welcome To Trivia Club</Underline></TextBlock>
+        <TextBox FontSize="15" Name="usernameTextBox" TextWrapping="Wrap" Canvas.Left="178" Canvas.Top="83" Width="220" Height="35"/>
+        <TextBlock TextTrimming="CharacterEllipsis" FontSize="25" Text="Username:" Canvas.Left="22" Canvas.Top="83" Width="119" Height="33"/>
+        <PasswordBox Name="passwordBox" Canvas.Left="178" Canvas.Top="169" Width="220" Height="35"/>
+        <TextBlock TextTrimming="CharacterEllipsis" FontSize="25" Height="40" Canvas.Left="22" Canvas.Top="169" Width="119">Password:</TextBlock>
+        <Button Width="146"
+                Height="35" HorizontalAlignment="Left" FontSize="15" Click="LoginInClick" Canvas.Left="346" Canvas.Top="260" Content="Sign In"/>
+        <TextBlock Canvas.Left="22" Canvas.Top="227" Width="133" FontSize="14"><Bold>haven't registered ?</Bold></TextBlock>
+        <Button Width="146"
+                Height="35" HorizontalAlignment="Left" FontSize="15" Canvas.Left="22" Click="SignUpClick" Canvas.Top="260" >Sign Up</Button>
+        <Button FontSize="15" Canvas.Left="10" Canvas.Top="10" RenderTransformOrigin="3.746,2.014" Width="117" Height="35" Click="ForgotPasswordClick">Forgot password</Button>
+    </Canvas>
+</Window>

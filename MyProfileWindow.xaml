@@ -1,0 +1,19 @@
+﻿<Window x:Class="Client.MyProfileWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="MyProfileWindow" Height="500" Width="500">
+    <Canvas Name="MyPrefomanceCanvas">
+        <Button Click="Back_Click" FontSize="16" Canvas.Left="358" Canvas.Top="12" Height="32">
+            <Bold>Back To Menu</Bold>
+        </Button>
+        <TextBlock FontSize="20" Canvas.Left="32" Canvas.Top="120" Width="233"><Bold>Number Of Games</Bold></TextBlock>
+        <TextBlock FontSize="28" Canvas.Left="86" Canvas.Top="31" Width="223" Height="46"><Bold>My Preformance</Bold></TextBlock>
+        <TextBlock FontSize="20" Canvas.Left="32" Canvas.Top="200" Width="254"><Bold>Number Of Right Question</Bold></TextBlock>
+        <TextBlock FontSize="20" Canvas.Left="32" Canvas.Top="280" Width="277"><Bold>Number Of Wrong Question</Bold></TextBlock>
+        <TextBlock FontSize="20" Canvas.Left="32" Canvas.Top="360" Width="277"><Bold>Average Time For Answer</Bold></TextBlock>
+    </Canvas>
+</Window>
